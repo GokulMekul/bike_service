@@ -1,0 +1,453 @@
+/* Register.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Work+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
+
+
+#sideofuserregister{
+    width: 600px;
+    height: 637px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    color:black;
+ 
+}
+#Userregister {
+    font-family: 'Urbanist', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    font-weight: 300;
+    
+    display: inline-block;
+
+    font-size: 20px;
+    margin-left: 450px;
+    position: absolute;
+    margin-top:30px;
+    border-color: black;
+    color:black;
+  
+    padding-top: 50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    background-color: #ccc;
+    border-radius: 0px 50px 0px 50px;
+    
+    
+    
+  }
+.label{
+   font-size: 20px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color:black
+}
+.userregisterinput{
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+   
+}
+ 
+#userresgiterbtn,#loginbtn{
+margin-left: 120px;
+margin-top: 30px;
+width:120px;
+font-family: 'Poppins', sans-serif;
+background-color: #2600ff; 
+color: white;
+
+
+}
+#userresgiterbtn:hover {
+
+    transform: scale(1.05);
+  }
+  
+#userresgistermessage{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+}
+ #loginbackgroundimage{
+  background-color: #908e8d;
+background-image: url("https://images.pexels.com/photos/3806275/pexels-photo-3806275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+ padding-bottom: 75px;
+background-size:cover;
+ }
+#loginbackground{
+  background-color: #ccc;
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: 60px;
+  padding: 80px;
+  border-radius: 0px 50px 0px 50px;
+  animation: fadeIn 1.5s ease-in-out;
+
+}
+#logintext{
+  font-family: 'Urbanist', sans-serif;
+  color: black;
+  
+}
+.loginmessage{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  font-size: 17px;
+  margin-left: 20px;
+  color:black;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#adminlogintext{
+  font-family: 'Urbanist', sans-serif;
+  color: rgb(255, 255, 255);
+
+}
+#adminloginbackground{
+  font-family: 'Urbanist', sans-serif;
+  display:inline-block;
+  background-color: rgb(109, 112, 112);
+  padding:50px;
+margin-left: 450px;
+margin-top: 80px;
+
+border-radius: 0px 50px 0px 50px;
+
+}
+.labelforadmin{
+  color:white;
+} 
+#adminmessage{
+  color: rgb(255, 255, 255);
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+}
+#adminloginbtn{
+  margin-left: 100px;
+  margin-top: 40px;
+  width:120px;
+  font-family: 'Poppins', sans-serif;
+  
+  color: white;
+  
+}
+#bookingbackground{
+  color: black;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display:block;
+  margin-left: 470px;
+  margin-top:110px;
+  margin-bottom: 100px;
+  
+}
+.bookinginput{
+  margin-bottom: 10px;
+  margin-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+
+}
+#bookingform{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-family: 'Quicksand','poppins'; 
+}
+#bookingformbutton{
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#bookingformbutton:hover{
+  background-color: #0056b3;
+}
+#bookingformh3{
+  font-family: 'Quicksand','poppins';
+}
+#welcomeondash{
+  font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color:black;
+}
+#previousbooking{
+  font-family: 'Quicksand';
+  font-size: 30px;
+  color:black;
+ 
+}
+
+#loading{
+  font-family: 'Quicksand';
+}
+.soc{
+  display: inline-block;
+  background-color: #f87979;
+  padding: 20px;
+  border-radius: 5px;       
+  box-shadow: 10px 10px 10px 10px #ccc;
+  font-family: 'Quicksand','poppins';
+  color:black;
+  font-size: 20px;
+  margin-left: 100px;
+  padding:50px;
+
+  
+}
+#soc p {
+  margin: 0;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: 'Quicksand','poppins';
+  font-size: 20px;
+}
+
+#pyb{
+  font-family: 'Quicksand';
+  font-size: 30px;
+  color:black;
+  margin-top: 20px;
+  
+}
+#byfs{
+  
+  font-family: 'Quicksand';
+  font-size:25px;
+  margin-top:40px;
+  margin-left:550px;
+  color:black;
+
+}
+#bookingul{
+  list-style-type: none;
+  padding: 0;
+}
+#libooking{
+  background-color: #f2f2f2;
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  flex-direction: column;
+  color:black;
+  font-family: 'Quicksand','poppins';
+  font-size:18px;
+  width:500px;
+  margin-left: 40px;
+}
+.lidiv{
+  margin-top: 10px;
+  width:700px;
+}
+.libtn{
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left:10px;
+}
+.libtn:hover {
+  background-color: #cc0000;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+/* Add styles for pending and completed statuses */
+.libooking.pending {
+  background-color: #ffc107; /* Yellow for pending */
+  color:black;
+}
+
+.libooking.completed {
+  background-color: #28a745; /* Green for completed */
+  color:black;
+}
+
+#bookedsuccess{
+  font-size: 18px;
+  font-family: 'Quicksand','poppins';
+  margin-top: 20px;
+  
+  border-radius: 30px;
+  
+ 
+}
+#admindash{
+  font-family: 'Quicksand','poppins';
+  color:black
+}
+/* Style for the entire table */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color:black;
+}
+
+/* Style for table headers */
+.booking-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style for table rows */
+.booking-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Style for alternating row backgrounds */
+.booking-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to rows with the 'fade-in' class */
+.booking-table tbody tr.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Style for select boxes */
+.booking-table select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style for buttons */
+.booking-table button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.booking-table button:hover {
+  background-color: #0056b3;
+}
+#bookingdetail{
+  color:black;
+  font-size: 40px;
+  margin-top:20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  padding:10px;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+#Nobook{
+color: black;
+font-size: 50px;
+}
+.pendbook{
+  color: #f34d4d;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight:400;
+
+}
+.combook{
+  color: #2abb4c;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight:400;
+}
+/* CSS for fade-in and fade-out animations */
+/* CSS for slide-in and slide-out animations */
+.slide-in {
+  transform: translateX(100%);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#adminbackground{
+  background-color: #fffcfd;
+background-image: url("https://images.pexels.com/photos/3823218/pexels-photo-3823218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+padding-bottom: 100px;
+background-size:cover;
+}
+
+#registerbackgroundimage{
+  background-image: url("https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  padding-bottom: 590px; 
+  
+  background-size:cover;
+}

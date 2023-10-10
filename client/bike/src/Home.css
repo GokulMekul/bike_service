@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Work+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.image-container {
+    position: absolute;
+
+}
+
+#Hello {
+    color:rgb(255, 255, 255);
+    font-size: 40px;
+    position: relative;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 800px;
+    margin-top:150px;
+}
+#Quotes{
+    position: relative;
+    color:rgb(255, 255, 255);
+    margin-left: 800px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+} 
+#Hello {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: relative;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 800px;
+    margin-top: 150px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#Quotes {
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin-left: 850px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+} 
+
+.A{
+   width: 350px;
+   margin-top: 70px;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   box-shadow:20px 20px 20px 20px rgb(119, 118, 118);
+   margin-left: 60px;
+   transform: rotate(45deg);
+   display: block;
+
+}
+.A2{
+    margin-top: 100px;
+    box-shadow:20px 20px 20px 20px rgb(119, 118, 118);
+    position:absolute;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+    z-index: 0; 
+}
+#next{
+    margin-top: 400px;
+    color:black;
+}
+
+.bottonon{
+    color:black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 350px;
+    margin-bottom: 100px;
+}  
+.cononbottom{
+    font-weight: 200;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    text-align: center;
+    margin-left: 480px; 
+}
+
+#ourservices{
+    margin-bottom: 50px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .right-content {
+    flex: 2;
+    padding: 20px;
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #ourservices,
+  #service1,
+  #service2,
+  #service3 {
+    animation: fadeIn 5.5s ease-in-out forwards;
+  }
+  #animate-services {
+    animation: fadeIn 5.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #groupofbuttons {
+    margin-left: 500px;
+    margin-bottom: 100px;
+  }
+  
+  #gobr, #gobl {
+    margin: 10px;
+    margin-left: 90px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #dc3545; 
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  #gobr:hover, #gobl:hover {
+    background-color: #2600ff; 
+    transform: scale(1.05); 
+  }
+
+
+#c3,#c2,#c1{
+  width: 250px;
+  display: inline-block;
+  margin:80px;
+  margin-right: 110px;
+  background-color: rgb(253, 253, 253);
+  color:rgb(0, 0, 0);
+  font-family: 'Quicksand', sans-serif;
+  
+}
+#card-Background{
+  display: block;
+  background-color: rgb(187, 184, 184);
+ 
+  
+}
+.card:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.2); 
+
+}
+#verifiedicon{
+
+display:inline-block;
+width: 400px;
+text-align: center;
+padding:20px;
+margin: 10px;
+font-family: 'Poppins', sans-serif;
+margin-top: 100px;
+}
+#phoneicon{
+  
+  display:inline-block;
+  width:400px;
+  text-align: center;
+  margin-top:20px;
+  padding:20px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+#hearticon{
+
+  display:inline-block;
+  width: 400px;
+  text-align: center;
+  padding:20px;
+  margin: 10px;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  }
+.textonic{
+  background-color: rgb(187, 184, 184);
+  border-radius: 20px 0px 0px 20px;
+  margin-top: 30px;
+  padding:20px;
+  font-weight: 200;
+ margin-bottom: 200px;
+ color:black;
+}.icon-animation {
+  transition: transform 0.2s ease; 
+}
+.iconcolor{
+  color:black;
+}
+
+
+.tweet {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width:500px;
+  margin-left: 450px;
+  display:block;
+  
+}
+.tweet .user {
+  font-weight: bold;
+  color:black;
+  
+}
+.tweet .timestamp {
+  color: #777;
+}
+.tweet .message {
+  margin-top: 10px;
+  color: black;
+}
+.twitter-logo {
+  width: 20px; 
+  height: auto; 
+  display: inline-block;
+}
+#tweetpost{
+  background-color: black;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+ 
+}
+#customerfeedback{
+  color:rgb(255, 255, 255);
+  display: inline;
+  font-family: 'Urbanist', sans-serif;
+  margin-left: 500px;
+} 
+
+.contact{
+  background-color: #ffffff;
+  display: inline-block;
+  width: 200px;
+  margin-left: 120px;
+  font-size: 17px;
+  text-decoration:none;
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+
+}
+#ct{
+  margin-left:500px;
+  margin-bottom: 50px;
+ font-size: 30px;
+ color:black;
+ font-weight: bold;
+ font-family: 'Urbanist', sans-serif;
+}
+.iconcolor{
+  color:black;
+ 
+}
+.iconword{
+  color:black;
+}

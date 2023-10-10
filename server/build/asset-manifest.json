@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f41325b.css",
+    "main.js": "/static/js/main.5e8f928c.js",
+    "static/media/bikeback.jpeg": "/static/media/bikeback.2f9799e7f1637f2b78e5.jpeg",
+    "static/media/istockphoto-1174788025-1024x1024.jpg": "/static/media/istockphoto-1174788025-1024x1024.8502732f341beabe2bb1.jpg",
+    "static/media/Frontlook.jpeg": "/static/media/Frontlook.0830f57b00e012ca6ea2.jpeg",
+    "static/media/R.jpg": "/static/media/R.c8608400fb657992ff0c.jpg",
+    "static/media/Twitterlogo.gif": "/static/media/Twitterlogo.49fb3ec8a357b4415490.gif",
+    "static/media/pexels-photo-3599586.webp": "/static/media/pexels-photo-3599586.483d4aa178d623f0d549.webp",
+    "static/media/waterwash.jpeg": "/static/media/waterwash.3105fafe6f9dcfa8334b.jpeg",
+    "static/media/istockphoto-1188820923-170667a.webp": "/static/media/istockphoto-1188820923-170667a.4290b530ce4bc0f59884.webp",
+    "static/media/check.png": "/static/media/check.f306c52678eeef9af6d6.png",
+    "index.html": "/index.html",
+    "main.5f41325b.css.map": "/static/css/main.5f41325b.css.map",
+    "main.5e8f928c.js.map": "/static/js/main.5e8f928c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f41325b.css",
+    "static/js/main.5e8f928c.js"
+  ]
+}
