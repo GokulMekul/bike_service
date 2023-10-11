@@ -3,6 +3,7 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
+require('dotenv').config();
 
 const Booking = require('./models/Booking'); // Assuming 'Booking.js' is in the 'models' directory
 //const adminRouter = require('./routes/admin'); 
@@ -16,7 +17,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 // MongoDB connection
-mongoose.connect('mongodb://localhost/Bike-user', {
+mongoose.connect(process.env.DATABASE_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

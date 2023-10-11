@@ -5,6 +5,180 @@ import './Register.css';
 import emailjs from 'emailjs-com';
 
 // Configure Email.js with your service ID, template ID, and user ID
+
+
+function ServiceBookingForm({ userEmail, fetchBookings }) {
+  const emailjsUserId = process.env.REACT_APP_EMAILJS_USER_ID;
+  const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  
+  
+  console.log(emailjsUserId,'abouta'); // Check if it logs the correct user ID
+  
+  emailjs.init(emailjsUserId); // Replace with your actual Email.js user ID
+
+
+  const [serviceDate, setServiceDate] = useState('');
+  const [bikeModel, setBikeModel] = useState('');
+  const [selectedService, setSelectedService] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const emailParams = {
+        to_email: 'gokulmekul@gmail.com', // Replace with the recipient's email
+        from_name: userEmail, // Replace with your name or sender's name
+        service_date: serviceDate,
+        bike_model: bikeModel,
+        service_type: selectedService,
+      };
+
+      await  emailjs.send(emailjsServiceId, emailjsTemplateId, emailParams);
+ // Replace with your service and template IDs
+      const response = await axios.post('/api/bookings', {
+        email: userEmail,
+        serviceDate,
+        bikeModel,
+        selectedService,
+        status: 'Pending',
+      });
+      console.log('Response status:', response.status);
+      if (response.status === 201) {
+        setMessage('Booked successfully.');
+
+        // Clear form fields or reset the form as needed
+        setServiceDate('');
+        setBikeModel('');
+        setSelectedService('');
+
+        // Automatically clear the success message after 3 seconds
+        setTimeout(() => {
+          setMessage('');
+        }, 5000);
+        fetchBookings();
+      }
+    } catch (error) {
+      console.error('Booking and email sending failed:', error);
+      setMessage('Booking and email sending failed. Please try again later.');
+    }
+  };
+  return (
+    <div>
+     <div className="services-container">
+      <h2 className='service-section-x'> Hey Buddy...!</h2>
+      <br/>
+      <h3 className='service-section-x'>Regular maintenance keeps your bike ready for the road's twists and turns</h3>
+      <div className="service-section">
+        <h3 className='service-section-h' >Cost Of Services</h3>
+        <p className='service-section-p'>Water Wash - Rs. 500</p>
+        <p className='service-section-p'>Oil Wash - Rs. 1000</p>
+        <p className='service-section-p'>General Checkup - Rs. 800</p>
+      </div>
+      <div className="service-section">
+        <h3 className='service-section-h'>Delivery</h3>
+        <p className='service-section-p'>Normal Delivery in 3 days</p>
+        <p className='service-section-p'>Fast Delivery in 1 day</p>
+        <p className='service-section-p'>Urgent Delivery Within 2 hours</p>
+      </div>
+    </div>
+     
+       
+      <h3 id='pyb'>Place Your Booking Here</h3>
+      <div id='bookingformbackgroundimage'>
+
+      <div id="bookingbackground">
+      
+      <h3 id="bookingformh3">Book Service</h3>
+      
+      <form onSubmit={handleSubmit} id="bookingform">
+        <div>
+          <label htmlFor="email" >Email:</label>
+          <input  className='bookinginput'
+            type="email"
+            id="email"
+            value={userEmail}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="serviceDate">Service Date:</label>
+          <input
+          className='bookinginput'
+            type="date"
+            id="serviceDate"
+            value={serviceDate}
+            onChange={(e) => setServiceDate(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="bikeModel">Bike Model:</label>
+          <input
+          className='bookinginput'
+            type="text"
+            id="bikeModel"
+            value={bikeModel}
+            onChange={(e) => setBikeModel(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="selectedService">Service Type:</label>
+          <select
+            className='bookinginput'
+            id="selectedService"
+            value={selectedService}
+            onChange={(e) => setSelectedService(e.target.value)}
+            required
+          >
+            <option value="">Select Service Type</option>
+            <option value="General Service Checkup">General Service Checkup</option>
+            <option value="Oil Wash">Oil Wash</option>
+            <option value="Water Wash">Water Wash</option>
+          </select>
+        </div>
+        <button type="submit" id="bookingformbutton">Book Service</button>
+      </form>
+      <h3 id='bookedsuccess'>{message}</h3>
+      </div>
+      </div>
+    </div>
+  );
+}
+
+export default ServiceBookingForm; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React, { useState } from 'react';
+import Header from './Header';
+import axios from 'axios';
+import './Register.css';
+import emailjs from 'emailjs-com';
+
+// Configure Email.js with your service ID, template ID, and user ID
 emailjs.init('F12BsOLUUyJoVTlfD'); // Replace with your actual Email.js user ID
 
 function ServiceBookingForm({ userEmail, fetchBookings }) {
@@ -135,4 +309,4 @@ function ServiceBookingForm({ userEmail, fetchBookings }) {
 
 export default ServiceBookingForm; 
  
- 
+ */

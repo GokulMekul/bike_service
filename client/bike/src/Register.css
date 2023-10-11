@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Work+Sans:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@200;300&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Urbanist:ital,wght@1,200&family=Work+Sans:ital,wght@1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 #sideofuserregister{
     width: 600px;
@@ -144,6 +144,12 @@ border-radius: 0px 50px 0px 50px;
   color: white;
   
 }
+#bookingformbackgroundimage{
+  background-image: url('https://wallpapercave.com/wp/wp8240456.jpg');
+  background-size: cover;
+  padding-top:50px;
+  padding-bottom: 20px;
+}
 #bookingbackground{
   color: black;
   max-width: 400px;
@@ -172,6 +178,7 @@ border-radius: 0px 50px 0px 50px;
   flex-direction: column;
   color: black;
   font-family: 'Quicksand','poppins'; 
+
 }
 #bookingformbutton{
   background-color: #007bff;
@@ -191,51 +198,83 @@ border-radius: 0px 50px 0px 50px;
 #welcomeondash{
   font-family: 'Urbanist', sans-serif;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color:black;
+ 
 }
 #previousbooking{
-  font-family: 'Quicksand';
+  font-family: 'Lora', serif;
   font-size: 30px;
   color:black;
+  margin-top: 50px;
  
 }
 
 #loading{
   font-family: 'Quicksand';
 }
-.soc{
-  display: inline-block;
-  background-color: #f87979;
-  padding: 20px;
-  border-radius: 5px;       
-  box-shadow: 10px 10px 10px 10px #ccc;
-  font-family: 'Quicksand','poppins';
-  color:black;
-  font-size: 20px;
-  margin-left: 100px;
-  padding:50px;
-
-  
-}
-#soc p {
-  margin: 0;
-  margin-top: 10px;
-  padding: 20px;
-  font-family: 'Quicksand','poppins';
-  font-size: 20px;
+.services-container{
+ display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+ background-repeat: no-repeat;
+ padding-left: 200px;
+  color: black;
+  background-size: cover;
+ 
 }
 
+.service-section {
+  background-color:initial;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; /* Add a smooth hover animation */
+  margin: 10px;
+  color:rgb(255, 255, 255);
+  padding-top: 20px;
+  background-color: #1b66b7;
+  width: 500px;
+
+  margin-top: 60px;
+}
+.service-section:hover {
+  transform: translateY(-10px); /* Move the section up a bit on hover */
+}
+.service-section-p{
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: 'Lora', serif;
+
+}
+.service-section-h{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+  color:white;
+
+}
+.service-section-x{
+  color:rgb(50, 50, 50);
+  font-family: 'Lora', serif;
+}
+.service-section-h3{
+  color:rgb(50, 50, 50);
+  font-family: 'Lora', serif;
+}
 #pyb{
-  font-family: 'Quicksand';
+  font-family: 'Lora', serif;
   font-size: 30px;
   color:black;
-  margin-top: 20px;
-  
+  margin-top: 50px;
+  margin-bottom: 40px;
+ 
 }
 #byfs{
-  
-  font-family: 'Quicksand';
+
+  font-family: 'Lora', serif;
   font-size:25px;
   margin-top:40px;
   margin-left:550px;
@@ -386,10 +425,9 @@ border-radius: 0px 50px 0px 50px;
   margin-top:20px;
   font-weight: 500;
   margin-bottom: 20px;
-
+  font-family: 'Lora', serif;
   padding:10px;
-  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 
 }
 #Nobook{
@@ -401,6 +439,7 @@ font-size: 50px;
   margin-top: 50px;
   font-size: 30px;
   font-weight:400;
+  font-family: 'Lora', serif;
 
 }
 .combook{
@@ -408,6 +447,7 @@ font-size: 50px;
   margin-top: 50px;
   font-size: 30px;
   font-weight:400;
+  font-family: 'Lora', serif;
 }
 /* CSS for fade-in and fade-out animations */
 /* CSS for slide-in and slide-out animations */
