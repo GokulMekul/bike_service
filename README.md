@@ -75,17 +75,15 @@ Email.js Account: To send email notifications, you'll need an Email.js account. 
    - When an admin updates the status of a booking to "Complete," an email notification is sent to the user's registered email address.
   
 #Screenshots
-Home Page
+##Home Page
 ![Blank 2 Grids Collage](https://github.com/GokulMekul/bike_service/assets/113968152/1c963a7a-c0b2-4a7a-94a9-c647a95eb4ec) 
 ![Collage Maker-10-Oct-2023-10-05-PM-1432](https://github.com/GokulMekul/bike_service/assets/113968152/a02e78ac-da02-47ba-acd1-d3031fb7042b)
 ![Collage Maker-10-Oct-2023-10-08-PM-7032](https://github.com/GokulMekul/bike_service/assets/113968152/5c39719f-c4d8-4a84-a3be-995671335e5e)
 Login & registration
 ![Collage Maker-10-Oct-2023-10-11-PM-6417](https://github.com/GokulMekul/bike_service/assets/113968152/6ed8d939-faed-4e61-88ae-65f637239bfd)
 ![Collage Maker-10-Oct-2023-10-14-PM-4403](https://github.com/GokulMekul/bike_service/assets/113968152/c7d8ca7c-baf8-4e99-b284-2ab4564ca05f)
-admin login & admin Abouta
-![Collage Maker-10-Oct-2023-10-15-PM-9191](https://github.com/GokulMekul/bike_service/assets/113968152/c8d7a928-0db9-4d74-9ffb-3e4053379727)
-![Collage Maker-10-Oct-2023-10-17-PM-9892](https://github.com/GokulMekul/bike_service/assets/113968152/2dbe7677-4950-45dc-9ff5-a9f82b16fa80)
-![Screenshot (135)](https://github.com/GokulMekul/bike_service/assets/113968152/8ba479c2-f22e-461d-92b1-82235f136375)
+##admin login & admin Abouta
+
 
 
 ##technologies And Installation Used :
